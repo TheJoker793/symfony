@@ -1,0 +1,51 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+#tasklist api
+taskList_api_index:
+    path: /api/taskList
+    controller: 'App\Controller\TaskListController::index'
+    methods: ['Get']
+taskList_api_show:
+    path: /api/taskList/{id}
+    controller: 'App\Controller\TaskListController::show'
+    methods: ['Get']
+taskList_api_create:
+    path: /api/taskList
+    controller: 'App\Controller\TaskListController::create'
+    methods: ['Post']
+taskList_api_update:
+    path: /api/taskList/{id}
+    controller: 'App\Controller\TaskListController::update'
+    methods: ['Put']
+taskList_api_delete:
+    path: /api/taskList/{id}
+    controller: 'App\Controller\TaskListController::delete'
+    methods: ['Delete']
+
+#task api
+task_api_index:
+    path: /api/tasks
+    controller: 'App\Controller\TaskController::index'
+    methods: ['Get']
+task_api_show:
+    path: /api/tasks/{id}
+    controller: 'App\Controller\TaskController::show'
+    methods: ['Get']
+task_api_create:
+    path: /api/tasks
+    controller: 'App\Controller\TaskController::create'
+    methods: ['Post']
+task_api_update:
+    path: /api/tasks/{id}
+    controller: 'App\Controller\TaskController::update'
+    methods: ['Put']
+task_api_delete:
+    path: /api/tasks/{id}
+    controller: 'App\Controller\TaskController::delete'
+    methods: ['Delete']
+
+
+
